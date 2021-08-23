@@ -1,5 +1,7 @@
 @import "../node_modules/bootstrap/scss/bootstrap";
 
+// BOOTSTRAP OVERRIDES
+
 .breadcrumb > .active,
 .breadcrumb > .active a {
   color: white;
@@ -9,6 +11,17 @@
   color: white;
   text-decoration: none;
 }
+
+// BOOTSTRAP OVERRIDES END ----------------------------------------------------------------------------------------------------------------------------------------
+
+// MAIN -----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+main {
+  margin-top: calc(100vh - 78px);
+}
+
+// MAIN END -----------------------------------------------------------------------------------------------------------------------------------------------------------
+
 
 .imgShade::after {
   position: absolute;
@@ -34,18 +47,9 @@
   color: white;
 }
 
-// .nav-item:hover {
-//   background-color: red;
-//   color: #000;
-// }
-
 .scrolled {
   color: black;
   transition: all ease-out 0.5s;
-}
-
-main {
-  margin-top: 414px;
 }
 
 #videoBG {
@@ -53,7 +57,7 @@ main {
   width: 100vw;
   height: 100vh;
   position: absolute;
-  top: -200px;
+  top: 0;
   left: 0;
   z-index: -4;
 }
@@ -61,7 +65,7 @@ main {
 .bgimage {
   position: absolute;
   width: 100%;
-  height: 610px;
+  height: 100vh;
   top: 0px;
   left: 0;
   z-index: -2;
@@ -123,18 +127,16 @@ main {
 .bgimageContact::before {
   content: "";
   position: absolute;
-  top: 0;
-  bottom: 50%;
+  top: -600px;
+  bottom: 0;
   width: 100%;
-  height: 100%;
-  z-index: -3;
 
-  background: linear-gradient(90deg, #fc4445 0%, #16248c 100%) 0% 0% padding-box;
+  z-index: -3;
+  background: linear-gradient(#00000096 100%, #868686 100%) 0% 0% padding-box, url("/public/images/Contact1.jpeg");
+  // background: linear-gradient(90deg, #fc4445 0%, #16248c 100%) 0% 0% padding-box;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-
-  transform: scaleX(-1);
 }
 
 
@@ -151,6 +153,7 @@ main {
   content: "";
   position: absolute;
   top: 0;
+  
   bottom: 50%;
   width: 100%;
   height: 100%;
@@ -188,27 +191,48 @@ h1 {
 }
 
 .cardbg {
-  background: linear-gradient(to right, #ff416c, #ff4b2b);
+  // border-bottom: 1px solid #fc4445;
+  border-left: 1px solid #fc4445;
+  // background: #fc4445;
 }
 
 .customBg {
-  content: "";
+  position: relative;
+  background: linear-gradient(90deg, #0000005b 0%, #00000067 100%) 0% 0% padding-box, url("/public/images/Contact1.jpeg");
+
   // background: linear-gradient(270deg, #ffffff00 35%, #00000057 65%) 0% 0%
   //     padding-box,
   //   linear-gradient(
   //       90deg,
-  //       rgba(0, 98, 178, 0.856) 0%,
+  //       #fb5354(0, 98, 178, 0.856) 0%,
   //       rgba(156, 195, 213, 0.404) 100%
   //     )
   //     0% 0% padding-box,
   //   url("/public/images/headerimage.jpeg");
-  background: linear-gradient(90deg, #16248c 0%, #fc4445 100%) 0% 0% padding-box;
+  // background: linear-gradient(90deg, #16248c 0%, #fc4445 100%) 0% 0% padding-box;
+
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: bottom;
   background-size: cover;
   width: 100%;
   height: 100%;
 }
+
+.customBg::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 4;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background: linear-gradient(#00000096 100%, #868686 100%) 0% 0% padding-box, url("/public/images/contact2.jpeg");
+
+}
+
+
 
 .customHero {
   position: relative;
@@ -269,7 +293,7 @@ h1 {
 // }
 
 .slanted-container {
-  background-image: linear-gradient(183deg, #fb5354 50%, #fff calc(50% + 2px));
+  background-image: linear-gradient(183deg, #fc4445 50%, #fff calc(50% + 2px));
   background-repeat: no-repeat;
   background-position: center;
 
@@ -279,7 +303,7 @@ h1 {
 .slanted-containerHome {
   background-image: linear-gradient(
     183deg,
-    #fb5354 50%,
+    #fc4445 50%,
     #f8f9fa calc(50% + 2px)
   );
   background-repeat: no-repeat;
@@ -290,7 +314,7 @@ h1 {
 
 .technology-bg {
   background-image: linear-gradient(
-    #fb5354 70%,
+    #fc4445 70%,
     #fff 70%
   );
   background-repeat: no-repeat;

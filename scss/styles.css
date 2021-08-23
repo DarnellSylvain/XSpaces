@@ -11508,6 +11508,10 @@ fieldset:disabled .btn {
   text-decoration: none;
 }
 
+main {
+  margin-top: calc(100vh - 78px);
+}
+
 .imgShade::after {
   position: absolute;
   content: "";
@@ -11539,17 +11543,13 @@ fieldset:disabled .btn {
   transition: all ease-out 0.5s;
 }
 
-main {
-  margin-top: 414px;
-}
-
 #videoBG {
   -o-object-fit: cover;
      object-fit: cover;
   width: 100vw;
   height: 100vh;
   position: absolute;
-  top: -200px;
+  top: 0;
   left: 0;
   z-index: -4;
 }
@@ -11557,7 +11557,7 @@ main {
 .bgimage {
   position: absolute;
   width: 100%;
-  height: 610px;
+  height: 100vh;
   top: 0px;
   left: 0;
   z-index: -2;
@@ -11617,18 +11617,15 @@ main {
 .bgimageContact::before {
   content: "";
   position: absolute;
-  top: 0;
-  bottom: 50%;
+  top: -600px;
+  bottom: 0;
   width: 100%;
-  height: 100%;
   z-index: -3;
-  background: -webkit-gradient(linear, left top, right top, from(#fc4445), to(#16248c)) 0% 0% padding-box;
-  background: linear-gradient(90deg, #fc4445 0%, #16248c 100%) 0% 0% padding-box;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(100%, #00000096), to(#868686)) 0% 0% padding-box, url("/public/images/Contact1.jpeg");
+  background: linear-gradient(#00000096 100%, #868686 100%) 0% 0% padding-box, url("/public/images/Contact1.jpeg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  -webkit-transform: scaleX(-1);
-          transform: scaleX(-1);
 }
 
 .bgimageContact {
@@ -11680,19 +11677,32 @@ h1, .h1 {
 }
 
 .cardbg {
-  background: -webkit-gradient(linear, left top, right top, from(#ff416c), to(#ff4b2b));
-  background: linear-gradient(to right, #ff416c, #ff4b2b);
+  border-left: 1px solid #fc4445;
 }
 
 .customBg {
-  content: "";
-  background: -webkit-gradient(linear, left top, right top, from(#16248c), to(#fc4445)) 0% 0% padding-box;
-  background: linear-gradient(90deg, #16248c 0%, #fc4445 100%) 0% 0% padding-box;
+  position: relative;
+  background: -webkit-gradient(linear, left top, right top, from(#0000005b), to(#00000067)) 0% 0% padding-box, url("/public/images/Contact1.jpeg");
+  background: linear-gradient(90deg, #0000005b 0%, #00000067 100%) 0% 0% padding-box, url("/public/images/Contact1.jpeg");
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: bottom;
   background-size: cover;
   width: 100%;
   height: 100%;
+}
+
+.customBg::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 4;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(100%, #00000096), to(#868686)) 0% 0% padding-box, url("/public/images/contact2.jpeg");
+  background: linear-gradient(#00000096 100%, #868686 100%) 0% 0% padding-box, url("/public/images/contact2.jpeg");
 }
 
 .customHero {
@@ -11744,22 +11754,22 @@ h1, .h1 {
 }
 
 .slanted-container {
-  background-image: linear-gradient(183deg, #fb5354 50%, #fff calc(50% + 2px));
+  background-image: linear-gradient(183deg, #fc4445 50%, #fff calc(50% + 2px));
   background-repeat: no-repeat;
   background-position: center;
   min-height: 450px;
 }
 
 .slanted-containerHome {
-  background-image: linear-gradient(183deg, #fb5354 50%, #f8f9fa calc(50% + 2px));
+  background-image: linear-gradient(183deg, #fc4445 50%, #f8f9fa calc(50% + 2px));
   background-repeat: no-repeat;
   background-position: center;
   min-height: 500px;
 }
 
 .technology-bg {
-  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(70%, #fb5354), color-stop(70%, #fff));
-  background-image: linear-gradient(#fb5354 70%, #fff 70%);
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(70%, #fc4445), color-stop(70%, #fff));
+  background-image: linear-gradient(#fc4445 70%, #fff 70%);
   background-repeat: no-repeat;
   background-position: center;
   min-height: 300px;
