@@ -198,7 +198,7 @@ h1 {
 
 .customBg {
   position: relative;
-  background: linear-gradient(90deg, #0000005b 0%, #00000067 100%) 0% 0% padding-box, url("/public/images/Contact1.jpeg");
+  background: linear-gradient(90deg, #0000005b 0%, #00000067 100%) 0% 0% padding-box, url("public/images/Contact1.jpeg");
 
   // background: linear-gradient(270deg, #ffffff00 35%, #00000057 65%) 0% 0%
   //     padding-box,
@@ -208,7 +208,7 @@ h1 {
   //       rgba(156, 195, 213, 0.404) 100%
   //     )
   //     0% 0% padding-box,
-  //   url("/public/images/headerimage.jpeg");
+  //   url("public/images/headerimage.jpeg");
   // background: linear-gradient(90deg, #16248c 0%, #fc4445 100%) 0% 0% padding-box;
 
   background-repeat: no-repeat;
@@ -228,7 +228,7 @@ h1 {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  background: linear-gradient(#00000096 100%, #868686 100%) 0% 0% padding-box, url("/public/images/contact2.jpeg");
+  background: linear-gradient(#00000096 100%, #868686 100%) 0% 0% padding-box, url("public/images/contact2.jpeg");
 
 }
 
