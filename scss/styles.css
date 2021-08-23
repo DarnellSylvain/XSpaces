@@ -11546,7 +11546,15 @@ main {
 }
 
 .nav-link:hover {
-  color: white;
+  -webkit-transform: scale(1.03);
+          transform: scale(1.03);
+  color: #fc4445;
+  -webkit-transition: 0ms all ease;
+  transition: 0ms all ease;
+}
+
+.nav-item:hover {
+  color: red;
 }
 
 .scrolled {
@@ -11591,56 +11599,7 @@ main {
           transform: scaleX(-1);
 }
 
-.bgimageTech {
-  position: absolute;
-  width: 100%;
-  height: 610px;
-  top: 0px;
-  left: 0;
-  z-index: -2;
-}
-
-.bgimageTech::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  bottom: 50%;
-  width: 100%;
-  height: 100%;
-  z-index: -3;
-  background: -webkit-gradient(linear, left top, right top, from(#fc4445), to(#16248c)) 0% 0% padding-box;
-  background: linear-gradient(90deg, #fc4445 0%, #16248c 100%) 0% 0% padding-box;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  -webkit-transform: scaleX(-1);
-          transform: scaleX(-1);
-}
-
 .bgimageSec {
-  position: absolute;
-  width: 100%;
-  height: 610px;
-  top: 0px;
-  left: 0;
-  z-index: -2;
-}
-
-.bgimageContact::before {
-  content: "";
-  position: absolute;
-  top: -600px;
-  bottom: 0;
-  width: 100%;
-  z-index: -3;
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(100%, #00000096), to(#868686)) 0% 0% padding-box, url("../public/images/Contact1.jpeg");
-  background: linear-gradient(#00000096 100%, #868686 100%) 0% 0% padding-box, url("../public/images/Contact1.jpeg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-}
-
-.bgimageContact {
   position: absolute;
   width: 100%;
   height: 610px;
@@ -11694,8 +11653,8 @@ h1, .h1 {
 
 .customBg {
   position: relative;
-  background: -webkit-gradient(linear, left top, right top, from(#0000005b), to(#00000067)) 0% 0% padding-box, url("../public/images/Contact1.jpeg");
-  background: linear-gradient(90deg, #0000005b 0%, #00000067 100%) 0% 0% padding-box, url("../public/images/Contact1.jpeg");
+  background: -webkit-gradient(linear, left top, right top, from(#000000b7), color-stop(0%, #000000b7)) 0% 0% padding-box, url("../public/images/Contact1.jpeg");
+  background: linear-gradient(90deg, #000000b7 0%, #000000b7 0%) 0% 0% padding-box, url("../public/images/Contact1.jpeg");
   background-repeat: no-repeat;
   background-position: bottom;
   background-size: cover;
@@ -11706,7 +11665,7 @@ h1, .h1 {
 .customBg::before {
   content: "";
   position: absolute;
-  top: 0;
+  bottom: 0;
   left: 0;
   width: 100%;
   z-index: 4;
@@ -11763,28 +11722,6 @@ h1, .h1 {
   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(0, 0, 0, 1)' stroke-width='3' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
   -webkit-transition: all ease-out 0.5s;
   transition: all ease-out 0.5s;
-}
-
-.slanted-container {
-  background-image: linear-gradient(183deg, #fc4445 50%, #fff calc(50% + 2px));
-  background-repeat: no-repeat;
-  background-position: center;
-  min-height: 450px;
-}
-
-.slanted-containerHome {
-  background-image: linear-gradient(183deg, #fc4445 50%, #f8f9fa calc(50% + 2px));
-  background-repeat: no-repeat;
-  background-position: center;
-  min-height: 500px;
-}
-
-.technology-bg {
-  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(70%, #fc4445), color-stop(70%, #fff));
-  background-image: linear-gradient(#fc4445 70%, #fff 70%);
-  background-repeat: no-repeat;
-  background-position: center;
-  min-height: 300px;
 }
 
 .show {

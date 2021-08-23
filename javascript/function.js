@@ -13,14 +13,14 @@ changeStyle = () => {
 
 console.log(navbarToggler)
 
-// if (window.pageYOffset > 430) {
+if (window.pageYOffset > 430) {
 
-//     changeStyle()
+    changeStyle()
 
-//     for (let i = 0; i < navlinks.length; i++) {
-//         navlinks[i].classList.add("scrolled")
-//     }
-// }
+    for (let i = 0; i < navlinks.length; i++) {
+        navlinks[i].classList.add("scrolled")
+    }
+}
 
 
 window.onscroll = () => {
