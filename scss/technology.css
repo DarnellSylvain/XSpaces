@@ -11524,12 +11524,4 @@ fieldset:disabled .btn {
   -webkit-transform: scaleX(-1);
           transform: scaleX(-1);
 }
-
-.technology-bg {
-  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(70%, #fc4445), color-stop(70%, #fff));
-  background-image: linear-gradient(#fc4445 70%, #fff 70%);
-  background-repeat: no-repeat;
-  background-position: center;
-  min-height: 300px;
-}
 /*# sourceMappingURL=technology.css.map */
