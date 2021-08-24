@@ -11513,7 +11513,7 @@ fieldset:disabled .btn {
 }
 
 main {
-  margin-top: 414px;
+  margin-top: 454px;
 }
 
 .nav li:hover {
@@ -11546,8 +11546,6 @@ main {
 }
 
 .nav-link:hover {
-  -webkit-transform: scale(1.03);
-          transform: scale(1.03);
   color: #fc4445;
   -webkit-transition: 0ms all ease;
   transition: 0ms all ease;

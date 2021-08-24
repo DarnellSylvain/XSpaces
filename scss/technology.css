@@ -11510,18 +11510,16 @@ fieldset:disabled .btn {
 .bgimageTech::before {
   content: "";
   position: absolute;
-  top: 0;
+  top: -20px;
   bottom: 50%;
   width: 100%;
   height: 100%;
   z-index: -3;
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(100%, #00000096), to(#868686)) 0% 0% padding-box, url("../public/images/technology.jpeg");
-  background: linear-gradient(#00000096 100%, #868686 100%) 0% 0% padding-box, url("../public/images/technology.jpeg");
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(100%, #00000096), to(#868686)) 0% 0% padding-box, url("../public/images/banner-color.png");
+  background: linear-gradient(#00000096 100%, #868686 100%) 0% 0% padding-box, url("../public/images/banner-color.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   z-index: -2;
-  -webkit-transform: scaleX(-1);
-          transform: scaleX(-1);
 }
 /*# sourceMappingURL=technology.css.map */

@@ -1,25 +1,21 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Arvo&family=Lato&family=Old+Standard+TT&family=Oswald:wght@200;300;400&family=PT+Serif&family=Ubuntu&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&display=swap");
+
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+
 :root {
   --primary-color: #fc4445;
   --secondary-color: #9cc3d5ff;
 }
 
 * {
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
+
 }
 
 body {
-  font-family: "Poppins";
-  background-color: white;
-  margin: 0;
-  padding: 0;
-  background-color: fff;
+
 }
 
 /************************** HR Variations **************************/
@@ -97,10 +93,7 @@ hr {
   padding-top: 0rem;
   padding-bottom: 0rem;
   font-size: 16;
-  text-transform: uppercase;
   border: none;
-  font-family: "Poppins";
-  text-align: center;
   display: none;
   background-color: #fff;
 }
@@ -240,8 +233,10 @@ hr {
 }
 /***************************** About Us page *********************************/
 .who-are-we {
-  text-align: center;
-  width: 60%;
+ h1 {
+     text-align: center;
+ }
+  width: 90%;
   margin-top: 4rem;
   margin-left: auto;
   margin-right: auto;
@@ -249,12 +244,12 @@ hr {
 }
 
 .what-we-do-text {
-  text-align: center;
-  width: 60%;
+  max-width: 1200px;
+  width: 90%;
   margin-top: 1rem;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 5rem;
+  margin-bottom: 2rem;
 }
 
 .who-are-we h1 {
@@ -370,7 +365,10 @@ video {
 }
 .goals-container {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
+  max-width: 900px;
+  margin: 0 auto;
+  align-items: center;
 }
 
 .hidden-img {
@@ -378,7 +376,7 @@ video {
 }
 
 .goals2 {
-  width: 500px;
+  max-width: 500px;
 }
 
 .goals2 li {
@@ -388,6 +386,16 @@ video {
 .goals-container img {
   width: 500px;
   border-radius: 2rem;
+}
+
+.goals-img2-container {
+    height: 400px;
+    overflow: hidden;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+
 }
 
 .goals-container h1 {
@@ -400,7 +408,14 @@ video {
   }
 
   .goals-img2 {
-    display: none;
+    // display: none;
+    text-align: center;
+  }
+
+  .goals2 {
+      align-items: center;
+      margin: 0 auto;
+      width: 300px;
   }
 }
 /*# sourceMappingURL=main.css.map */
@@ -752,36 +767,4 @@ video {
 .ess-text {
   text-align: center;
   margin-bottom: 5rem;
-}
-
-.card-container {
-  display: flex;
-  max-width: 1200px;
-  justify-content: center;
-}
-
-.card {
-  padding: 1rem;
-  border-radius: 18px;
-  background: white;
-  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.9);
-  text-align: center;
-  margin-bottom: 6rem;
-  max-width: 325px;
-  min-width: 324px;
-  margin-left: 10px;
-  margin-right: 10px;
-  padding-bottom: 4rem;
-}
-
-@media screen and (max-width: 1100px) {
-  .card-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .card {
-    margin-bottom: 3rem;
-  }
 }
