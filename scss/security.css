@@ -146,7 +146,7 @@ body {
 /**************************** Security Banner ******************************/
 .security-banner {
   width: 100%;
-  height: 750px;
+  height: 600px;
   background: linear-gradient(90deg, #000000b7 0%, #00000096 0%) 0% 0%
       padding-box,
     url("../public/images/code.png");
