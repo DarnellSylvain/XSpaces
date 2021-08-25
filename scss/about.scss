@@ -9,15 +9,6 @@
   --primary-color: #fc4445;
   --secondary-color: #9cc3d5ff;
 }
-
-* {
-
-}
-
-body {
-
-}
-
 /************************** HR Variations **************************/
 hr {
   border-color: lightgrey;
@@ -80,22 +71,20 @@ hr {
 /***************************** About Us Banner *********************************/
 .aboutbanner {
   width: 100%;
-  height: 60rem;
   background: url("../public/images/About-2.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  padding-bottom: 1rem;
 }
 
 .aboutbanner-835px {
   color: var(--primary-color);
   padding-top: 0rem;
   padding-bottom: 0rem;
-  font-size: 16;
   border: none;
   display: none;
   background-color: #fff;
+  text-align: center;
 }
 
 .aboutbanner-835px p {
@@ -105,11 +94,9 @@ hr {
 .aboutbanner h2 {
   color: var(--primary-color);
   padding-top: 3rem;
-  padding-bottom: 0rem;
   font-size: 50px;
   text-transform: uppercase;
   border: none;
-  font-family: "Poppins";
   text-align: center;
 }
 
@@ -174,7 +161,6 @@ hr {
   ); /* Will override color (regardless of order) */
   -webkit-text-stroke-width: 3px;
   -webkit-text-stroke-color: black;
-  font-family: "Poppins";
 }
 
 .security-banner p {
@@ -389,7 +375,7 @@ video {
 }
 
 .goals-img2-container {
-    height: 400px;
+    max-height: 400px;
     overflow: hidden;
     border-radius: 50px;
     display: flex;
@@ -408,7 +394,7 @@ video {
   }
 
   .goals-img2 {
-    // display: none;
+    display: none;
     text-align: center;
   }
 

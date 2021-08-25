@@ -411,7 +411,7 @@ body {
 }
 
 .ds-text {
-  text-align: center;
+  text-align: start;
 }
 
 .ds-text p {
@@ -447,13 +447,14 @@ body {
   max-width: 350px;
   margin-right: auto;
   margin-left: auto;
+  margin-bottom: 4rem;
   border-bottom: solid;
   border-color: var(--primary-color);
   height: 170px;
 }
 
 .what-is-ds p {
-  padding-bottom: 10px;
+  margin-bottom: 60px;
 }
 
 .how-ds-works {
