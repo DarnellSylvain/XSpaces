@@ -307,7 +307,7 @@ body {
 /******************* Security Page (Cloud Section) *******************/
 
 .cbs-parent h1 {
-  color: var(--primary-color);
+  /* color: var(--primary-color); */
 }
 
 .cbs-parent h3 {
@@ -404,7 +404,7 @@ body {
 /******************* Security Page (Data Safeguard Section) *******************/
 
 .ds-parent h1 {
-  color: var(--primary-color);
+  /* color: var(--primary-color); */
 }
 
 .ds-parent h3 {
@@ -453,6 +453,10 @@ body {
   height: 170px;
 }
 
+.what-is-ds p {
+  padding-bottom: 10px;
+}
+
 .how-ds-works {
   max-width: 350px;
   margin-right: auto;
@@ -499,7 +503,7 @@ body {
 }
 
 .pii-parent h1 {
-  color: var(--primary-color);
+  /* color: var(--primary-color); */
   margin-bottom: 2rem;
   margin-top: 4rem;
 }
@@ -616,7 +620,7 @@ body {
 /******************* Security Page (Encryption and Secure Storage Section) *******************/
 
 .ess-parent h1 {
-  color: var(--primary-color);
+  /* color: var(--primary-color); */
 }
 
 .ess-parent h3 {
@@ -650,7 +654,7 @@ body {
   padding: 1rem;
   border-radius: 18px;
   background: white;
-  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.9);
+  box-shadow: 3px 5px 15px rgba(0, 0, 0, 0.698);
   text-align: center;
   margin-bottom: 6rem;
   max-width: 325px;
