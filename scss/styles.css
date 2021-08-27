@@ -11654,7 +11654,7 @@ h1, .h1 {
   background: -webkit-gradient(linear, left top, right top, from(#000000b7), color-stop(0%, #000000b7)) 0% 0% padding-box, url("../public/images/Contact1.jpeg");
   background: linear-gradient(90deg, #000000b7 0%, #000000b7 0%) 0% 0% padding-box, url("../public/images/Contact1.jpeg");
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: bottom;
   background-size: cover;
   width: 100%;
   height: 100%;
@@ -11668,7 +11668,7 @@ h1, .h1 {
   width: 100%;
   z-index: 4;
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: bottom;
   background-size: cover;
   background: -webkit-gradient(linear, left top, left bottom, color-stop(100%, #00000096), to(#868686)) 0% 0% padding-box, url("../public/images/contact2.jpeg");
   background: linear-gradient(#00000096 100%, #868686 100%) 0% 0% padding-box, url("../public/images/contact2.jpeg");
