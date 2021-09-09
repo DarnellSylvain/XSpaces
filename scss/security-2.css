@@ -1,0 +1,860 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Arvo&family=Lato&family=Old+Standard+TT&family=Oswald:wght@200;300;400&family=PT+Serif&family=Ubuntu&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&display=swap");
+
+:root {
+  --primary-color: #4467ff;
+  --secondary-color: #9cc3d5ff;
+  --bs-font-sans-serif: system-ui, -apple-system, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+* {
+  font-family: "poppins";
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--bs-font-sans-serif);
+  background-color: white;
+  margin: 0;
+  padding: 0;
+}
+
+/********** Scroll Bar ************/
+
+::-webkit-scrollbar {
+  width: 10px;
+  color: var(--primary-color);
+}
+
+::-webkit-scrollbar-track {
+  border-radius: 6px;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 8px;
+  background-color: var(--primary-color);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #2f00ff;
+}
+
+/************** Navbar ****************/
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  color: #000;
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  padding-right: 2rem;
+  border-bottom: solid 2px rgb(218, 218, 218);
+}
+
+.logo {
+  margin: 0.3rem 0.2rem 0.2rem 3rem;
+  height: 60px;
+  width: 202px;
+}
+
+.logo:hover {
+  color: #4365ff;
+}
+
+.navbar-links ul {
+  margin: 0;
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.navbar-links li {
+  list-style: none;
+}
+
+.navbar-links li a {
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  padding: 1rem;
+  display: block;
+  font-size: 15px;
+}
+
+.navbar-links li a:hover {
+  color: #4467ff;
+  font-size: bolder;
+  border-radius: 2rem;
+  transition: 0.1s ease-out;
+}
+
+.toggle-button {
+  position: absolute;
+  top: 1.75rem;
+  right: 1rem;
+  display: none;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  width: 30px;
+  height: 21px;
+  color: #000;
+}
+
+.toggle-button .bar {
+  height: 3px;
+  width: 100%;
+  background-color: #080606;
+  border-radius: 10px;
+}
+
+@media screen and (max-width: 790px) {
+  .footer-header .toggle-button {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .navbar-links {
+    display: none;
+    width: 100%;
+  }
+  .navbar {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+  }
+  .navbar-links ul {
+    width: 100%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+  .navbar-links li {
+    text-align: center;
+  }
+  .navbar-links li a {
+    padding: 0.5rem 1rem;
+  }
+  .navbar-links.active {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+
+  .logo {
+    margin: 0.3 auto;
+  }
+}
+
+/***************************** Security Banner *******************************/
+.security-banner {
+  width: 100%;
+  height: 750px;
+  background: linear-gradient(90deg, #000000b7 0%, #00000096 0%) 0% 0%
+      padding-box,
+    url("../images/rpa-1.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  max-height: 1080px;
+  color: var(--primary-color);
+}
+
+.txt-cntnr {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0rem;
+}
+
+.security-banner h2 {
+  text-align: start;
+  font-size: 40px;
+  padding-top: 300px;
+  color: #fff;
+}
+
+.security-banner p {
+  text-align: start;
+  font-size: 16px;
+
+  font-family: var(--bs-font-sans-serif);
+
+  color: #fff;
+}
+/* 
+  .column {
+    float: left;
+    width: 33.33333333333333333333333333333333333333333333333333333%;
+    margin-right: auto;
+    margin-left: auto;
+    align-items: center;
+    padding-top: 3rem;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .column img {
+    top: 0;
+  }
+  
+  .row::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  .row {
+    width: 1800px;
+    margin-right: auto;
+    margin-left: auto;
+    position: absolute;
+    top: 515px;
+    left: 50%;
+    transform: translateX(-50%);
+  } */
+
+/************ *************/
+/* .column-2 {
+    float: left;
+    width: 33.33333333333333333333333333333333333333333333333333333%;
+    margin-right: auto;
+    margin-left: auto;
+    align-items: center;
+    padding-top: 3rem;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .column-2 img {
+    top: 0;
+  }
+  
+  .row-2::after {
+    content: "";
+    display: table;
+    clear: both;
+  } */
+/* 
+  @media screen and (max-width: 1465px) {
+    .row {
+      display: none;
+    }
+  } */
+
+@media screen and (max-width: 535px) {
+  .security-banner h2 {
+    font-size: 30px;
+    font-weight: normal;
+    padding-top: 9rem;
+    -webkit-text-stroke-width: 2px;
+    text-align: center;
+  }
+
+  .security-banner p {
+    font-size: 15px;
+    text-align: center;
+  }
+
+  .security-banner {
+    height: 500px;
+  }
+}
+
+/******************** Security page title **************************/
+
+.title {
+  color: var(--primary-color);
+  font-size: 15px;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  margin-top: 4rem;
+  margin-bottom: 8rem;
+}
+
+/******************** Security Category parents ********************/
+
+.cbs-parent {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 7rem;
+}
+
+.ds-parent-parent {
+  width: 100%;
+  background-color: #f2f2f2;
+}
+.ds-parent {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 4rem;
+}
+
+.pii-parent {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.ess-parent-parent {
+  background-color: #f2f2f2;
+}
+
+.ess-parent {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/******************** Security Page (Cloud Section) ********************/
+
+.cbs-parent h1 {
+  color: var(--primary-color);
+}
+
+.cbs-parent h2 {
+  color: black;
+}
+
+.cbs-container {
+  margin: 40px auto;
+  max-width: 1200px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 6rem;
+}
+
+.cbs-text {
+  color: black;
+  max-width: 800px;
+}
+
+.cbs-text p {
+  margin-top: 1.5rem;
+}
+
+.cbs-info {
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  display: flex;
+  min-height: 400px;
+}
+
+.cbs-info p {
+  color: #7a7a7a;
+}
+
+.what-is-cloud {
+  max-width: 350px;
+  margin-right: auto;
+  margin-left: auto;
+  border-bottom: solid;
+  border-color: var(--primary-color);
+  height: 220px;
+}
+
+.how-cloud-works {
+  max-width: 350px;
+  margin-right: auto;
+  margin-left: auto;
+  align-self: center;
+  border-bottom: solid;
+  border-color: var(--primary-color);
+  padding-bottom: 3rem;
+}
+
+.our-strategy {
+  max-width: 350px;
+  margin-right: auto;
+  margin-left: auto;
+  align-self: flex-end;
+  border-bottom: solid;
+  border-color: var(--primary-color);
+  padding-bottom: 3rem;
+}
+
+@media screen and (max-width: 1140px) {
+  .cbs-info {
+    display: inline-block;
+  }
+
+  .what-is-cloud {
+    margin-bottom: 2rem;
+  }
+
+  .how-cloud-works {
+    margin-bottom: 2rem;
+  }
+
+  .our-strategy {
+    margin-bottom: 2rem;
+  }
+}
+
+@media screen and (max-width: 625px) {
+  .cbs-container {
+    display: inline-block;
+    justify-content: center;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 535px) {
+  .cbs-parent {
+    margin-top: 3rem;
+  }
+}
+
+/******************** Security Page (Data Safeguard Section) ********************/
+
+.ds-parent h1 {
+  color: var(--primary-color);
+}
+
+.ds-parent h2 {
+  color: black;
+  margin-top: 2.5rem;
+}
+
+.ds-text {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.ds-text p {
+  margin-top: 1.5rem;
+}
+
+.ds-img {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 200px;
+  margin-bottom: 4rem;
+  padding-top: 3rem;
+}
+
+.ds-info {
+  margin-right: auto;
+  margin-left: auto;
+  display: inline;
+  justify-content: center;
+  text-align: center;
+  min-height: 500px;
+  padding-top: 3rem;
+}
+
+.ds-info h2 {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.ds-info p {
+  color: #6c757d;
+}
+
+.what-is-ds {
+  border-bottom: solid;
+  border-color: var(--primary-color);
+  padding-bottom: 2rem;
+}
+
+.how-ds-works {
+  border-bottom: solid;
+  border-color: var(--primary-color);
+  padding-bottom: 1.5rem;
+}
+
+.our-strategy-2 {
+  border-bottom: solid;
+  border-color: var(--primary-color);
+  padding-bottom: 2rem;
+  margin-bottom: 5rem;
+}
+
+@media screen and (max-width: 1000px) {
+  .ds-info {
+    display: inline-block;
+    text-align: center;
+    margin-bottom: 0rem;
+  }
+
+  .what-is-ds {
+    margin-bottom: 2rem;
+    margin-top: 3rem;
+  }
+
+  .how-ds-works {
+    margin-bottom: 2rem;
+  }
+
+  .our-strategy-2 {
+    margin-bottom: 0rem;
+  }
+}
+
+@media screen and (min-width: 1001px) {
+  .ds-parent {
+    height: 70rem;
+  }
+}
+
+/******************** Security Page (Personal Identifiable Information Section) ********************/
+
+.pii-icon {
+  width: 200px;
+  margin: 2rem auto;
+}
+
+.pii-parent h1 {
+  color: var(--primary-color);
+  margin-bottom: 2rem;
+  margin-top: 4rem;
+}
+
+.pii-parent h2 {
+  color: #3a3a3a;
+  margin-bottom: 2rem;
+}
+
+.pii-text {
+  text-align: center;
+  margin-bottom: 5rem;
+}
+
+.pii-info-1 {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  margin-bottom: 5rem;
+  text-align: start;
+}
+
+.pii-info-1 p {
+  color: #6c757d;
+}
+
+.pii-info-2 p {
+  color: #6c757d;
+}
+
+.pii-info-1 h2 {
+  text-align: center;
+}
+
+.pii-info-2 {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  margin-bottom: 8rem;
+  text-align: start;
+}
+
+.pii-info-2 h2 {
+  text-align: center;
+}
+
+.what-is-pii {
+  max-width: 350px;
+  border-bottom: solid;
+  padding-bottom: 2rem;
+  border-color: var(--primary-color);
+}
+
+.how-pii-works {
+  max-width: 350px;
+  border-bottom: solid;
+  padding-bottom: 2rem;
+  border-color: var(--primary-color);
+}
+
+.our-strategy-3 {
+  max-width: 350px;
+  border-bottom: solid;
+  padding-bottom: 2rem;
+  border-color: var(--primary-color);
+}
+
+.pii-forth {
+  max-width: 350px;
+  border-bottom: solid;
+  padding-bottom: 2rem;
+  border-color: var(--primary-color);
+}
+
+@media screen and (max-width: 830px) {
+  .pii-info-2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: start;
+  }
+  .pii-info-1 {
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: auto;
+    text-align: start;
+    margin-bottom: 1rem;
+  }
+
+  .what-is-pii {
+    margin-bottom: 2rem;
+  }
+
+  .how-pii-works {
+    margin-bottom: 2rem;
+  }
+
+  .our-strategy-3 {
+    margin-bottom: 2rem;
+  }
+}
+
+/**** PII Banner ****/
+
+.pii-banner {
+  width: 100%;
+  height: 550px;
+  background: linear-gradient(90deg, #00000000 0%, #00000065 0%) 0% 0%
+      padding-box,
+    url("../images/passport-3.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  max-height: 600px;
+  color: var(--primary-color);
+}
+
+/******************** Security Page (Encryption and Secure Storage Section) ********************/
+
+.ess-parent h1 {
+  color: var(--primary-color);
+}
+
+.ess-parent h2 {
+  color: var(--primary-color);
+}
+
+.ess-img {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 200px;
+  margin-bottom: 4rem;
+  padding-top: 3rem;
+}
+
+.ess-text {
+  text-align: center;
+  margin-bottom: 5rem;
+}
+
+.ess-text p {
+  margin-top: 1.5rem;
+}
+
+.card-container {
+  display: flex;
+  max-width: 1200px;
+  justify-content: center;
+}
+
+.card {
+  padding: 1rem;
+  border-radius: 18px;
+  background: white;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.9);
+  text-align: center;
+  margin-bottom: 6rem;
+  max-width: 325px;
+  min-width: 324px;
+  margin-left: 10px;
+  margin-right: 10px;
+  padding-bottom: 4rem;
+}
+
+.card h2 {
+  margin-bottom: 1.5rem;
+}
+
+.card p {
+  color: #6c757d;
+}
+
+@media screen and (max-width: 1100px) {
+  .card-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card {
+    margin-bottom: 3rem;
+  }
+}
+
+/**************** Contact section above footer *********************/
+.bannerimg-2 {
+  width: 100%;
+  height: 300px;
+  background: linear-gradient(90deg, #000000b7 0%, #000000bd 0%) 0% 0%
+      padding-box,
+    url("../images/contact-banner-4.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  text-align: center;
+}
+
+.bannerimg-2 h2 {
+  padding-top: 3.5rem;
+  text-align: center;
+  color: #fff;
+  font-family: var(--bs-font-sans-serif);
+  font-size: 40px;
+}
+
+.bannerimg-2 p {
+  text-align: center;
+  color: #fff;
+  padding-top: 0.5rem;
+  font-family: var(--bs-font-sans-serif);
+}
+
+.primary-cta-2 {
+  background: rgb(95, 135, 209);
+  color: #000;
+  text-decoration: none;
+  font-size: 1.2em;
+  border-radius: 0.3em;
+  font-weight: bold;
+  display: inline-block;
+  margin-left: center;
+  margin-top: 1rem;
+  text-align: center;
+  padding-left: 0.3em;
+  padding-right: 0.3em;
+  padding-top: 0.4em;
+  padding-bottom: 0.6rem;
+  font-family: var(--bs-font-sans-serif);
+}
+
+.primary-cta-2:hover {
+  background-color: #4365ff;
+}
+/*************************************** Footer ******************************************/
+.footer-container {
+  background-color: #3b3b3b;
+  padding: 6rem 0 4rem 0;
+}
+
+.footer {
+  width: 80%;
+  height: 30%;
+  background-color: #3b3b3b;
+  color: rgb(255, 255, 255);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  max-width: 1000px;
+  text-align: center;
+}
+
+.footer-heading {
+  max-width: 1200px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  margin-right: auto;
+  margin-left: auto;
+  align-items: center;
+  width: 200px;
+  margin-top: 0rem;
+}
+
+.footer-heading h2 {
+  margin-bottom: 2rem;
+}
+
+.footer-heading a {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  margin-bottom: 0.5rem;
+  text-align: center;
+}
+
+.footer-heading a:hover {
+  color: var(--primary-color);
+  -webkit-transition: 0.3s ease-out;
+  transition: 0.3s ease-out;
+}
+
+.footer-logo {
+  margin: 4rem 0 1rem 0;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  height: 70px;
+  width: 70px;
+}
+
+.copyright {
+  color: rgb(255, 255, 255);
+  text-align: center;
+}
+
+@media screen and (max-width: 1150px) {
+  footer {
+    height: 30%;
+  }
+}
+
+@media screen and (max-width: 820px) {
+  footer {
+    padding-top: 2rem;
+  }
+}
+
+@media screen and (max-width: 720px) {
+  footer-1 {
+    display: none;
+  }
+}
